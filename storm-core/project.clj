@@ -1,7 +1,7 @@
 (def ROOT-DIR (subs *file* 0 (- (count *file*) (count "project.clj"))))
 (def VERSION (-> ROOT-DIR (str "/../VERSION") slurp (.trim)))
 
-(defproject storm/storm-core VERSION
+(defproject com.pearson.gambit/storm-core VERSION
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [commons-io "1.4"]
                  [org.apache.commons/commons-exec "1.1"]
@@ -18,7 +18,7 @@
                  [ring/ring-jetty-adapter "0.3.11"]
                  [org.clojure/tools.logging "0.2.3"]
                  [org.clojure/math.numeric-tower "0.0.1"]
-                 [storm/carbonite "1.6.0"]
+                 [com.pearson.gambit/carbonite "1.6.0"]
                  [org.yaml/snakeyaml "1.11"]
                  [org.apache.httpcomponents/httpclient "4.1.1"]
                  [storm/tools.cli "0.2.2"]
